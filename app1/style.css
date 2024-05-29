@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    height: 100vh;
+}
+
+nav {
+    width: 100%;
+    background: #333;
+    padding: 10px 0;
+    box-shadow: 0 0 10px gray;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #555;
+    border-radius: 4px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px gray;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1000px;
+    margin-top: 20px; /* Add margin to separate from nav bar */
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between input fields */
+}
+
+form label {
+    margin: 5px 0 3px;
+}
+
+form input, form select {
+    padding: 5px;
+    margin-bottom: 10px;
+    flex: 1; /* Allow inputs to grow */
+    min-width: 150px; /* Minimum width for inputs */
+}
+
+button {
+    padding: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #555;
+}
+
+.summary {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.transactions {
+    margin-top: 20px;
+}
+
+.transactions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.transactions li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transactions li.income {
+    color: green;
+}
+
+.transactions li.expense {
+    color: red;
+}
+
+.transactions li span {
+    flex: 1;
+    text-align: center; /* Center align the values */
+}
+
+.transactions .edit-btn, .transactions .delete-btn {
+    background: #f0ad4e;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+.transactions .edit-btn:hover {
+    background: #ec971f;
+}
+
+.transactions .delete-btn {
+    background: #e74c3c;
+}
+
+.transactions .delete-btn:hover {
+    background: #c0392b;
+}
+
+.transactions li span {
+    flex: 1;
+    text-align: right; /* Right align the amount */
+}
+
+.transactions li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

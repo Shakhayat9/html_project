@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon2.png">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="C:\Users\user\Desktop\html_project\About\index.html">About</a></li>
+            <li><a href="C:\Users\user\Desktop\html_project\feedback\index.html">Feedback</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1 style="text-align: center;">Budget Planner</h1>
+        <div class="form-container">
+            <h2 style="text-align: center;">Add Transaction</h2> 
+            <div class="input">
+                <form id="transaction-form">
+                    <div>
+                        <label for="type">Type:</label>
+                        <select id="type" required>
+                            <option value="income">Income</option>
+                            <option value="expense">Expense</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="description">Description:</label>
+                        <input type="text" id="description" required>
+                    </div>
+                    <div>
+                        <label for="amount">Amount:</label>
+                        <input type="number" id="amount" required>
+                    </div>
+                    <button type="submit">Add Transaction</button>
+                </form>
+            </div>
+        </div>
+        <div class="summary">
+            <h2>Summary</h2>
+            <p>Total Income: ৳<span id="total-income">0</span></p>
+            <p>Total Expenses: ৳<span id="total-expenses">0</span></p>
+            <p>Balance: ৳<span id="balance">0</span></p>
+        </div>
+        <div class="transactions">
+            <h2>Transactions</h2>
+            <ul id="transaction-list"></ul>
+        </div>
+        <button id="print-btn">Print Invoice</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
